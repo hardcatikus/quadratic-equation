@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Quadratic Equation</title>	
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div class="container">
+	
+	<header>
+		<h1>Вычисление корней квадратного уравнения</h1>
+	</header>
+	
+	<div class="in">
+	
+	<p>Введите коэфициенты квадратного уравнения a*x<sup>2</sup> + b*x + c = 0, где a ≠ 0.</p>
+	<form>
+		<input type="text" id="a" placeholder="a"> * x<sup>2</sup> + 
+		<input type="text" id="b" placeholder="b"> * x + 
+		<input type="text" id="c" placeholder="c"> = 0
+		
+		<br><br>
+		<input type="button" onclick="calculateResult();" value="Вычислить корни"> 
+		<input type="reset" value="Очистить">
+		<br> <pre id="caution" class="caution"></pre>
+		
+	</form>
+	
+	</div>
+	
+	<table>
+		<tr>
+			<td class="section" colspan="3">
+				<h3>Результат</h3>
+			</td>
+		</tr>
+		<tr class="headers">
+			<td class="equation">				
+				Уравнение
+			</td>
+			<td class="roots">				
+				Корни
+			</td>
+			<td class="discriminant">				
+				Дискриминант
+			</td>
+		</tr>
+		<tr class="result">
+			<td>				
+				<pre id="last_equation"></pre>
+			</td>
+			<td>				
+				<pre id="last_roots"></pre>
+			</td>
+			<td>				
+				<pre id="last_discriminant"></pre>
+			</td>
+		</tr>
+		<tr>
+			<td class="section" colspan="3">
+				<h3>Все результаты</h3>
+			</td>
+		</tr>
+		
+	</table>
+	
+	<table id="allresults">
+		<tr>
+			<td class="equation">				
+				Уравнение
+			</td>
+			<td class="roots">				
+				Корни
+			</td>
+			<td class="discriminant">				
+				Дискриминант
+			</td>
+		</tr>
+	</table>
+	
+	</div>
+	<script src="main.js"></script>	
+</body>
+</html>
